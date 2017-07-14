@@ -1,0 +1,36 @@
+.search{
+  border-radius: 17px;
+}
+ul {
+  list-style:none;
+  list-style-type:none;
+  list-style-image:none;
+}
+.music-container{
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  margin: 61px;
+  font-family: cursive;
+  font-size: x-large;
+  line-height: 2;
+}
+span.mtitle,span.rating{
+  display: block;
+  text-align: left;
+  font-size: 16px;
+  font-family: sans-serif;
+  float: left;
+}
+.music-container ul li{
+  display: inline-block;
+  float: left;
+  width: 100%;
+}
+span.mtitle {
+  width: 50%;
+  margin-left: 20%;
+}
+.opengenre{
+  margin-top: 10px;
+}

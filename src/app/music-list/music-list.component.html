@@ -1,0 +1,28 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+  <div class="row">
+    <h1 class="text-center"> Music Track </h1>
+  </div>
+  <div class="row">
+    <input type="text" class="col-md-4 col-md-offset-4 search"  placeholder="Search Music" [(ngModel)]="search" (keyup)="searchMusic()" />
+  </div>
+  <div class="row text-center music-container" >
+    <ul>
+      <li  *ngFor="let list of musicList.results" (click)="editTrack(list.id)"> <span class="mtitle">{{list.title}}</span> <span class="rating">{{list.rating}}</span></li>
+
+    </ul>
+  </div>
+  <div class="row">
+    <input type="button" (click)="addTrack()" class="col-md-4 col-md-offset-4 btn btn-primary"  value="ADD NEW TRACK"/>
+  </div>
+  <div class="row opengenre">
+    <input type="button" (click)="openGenre()" class="col-md-4 col-md-offset-4 btn btn-primary"  value="VIEW ALL GENRE"/>
+  </div>
+  <div class="row text-center">
+    <ul class="pagination">
+      <li *ngFor="let temp of arr" (click)="nextPage(temp)"><a href="#">{{temp}}</a></li>
+
+    </ul>
+  </div>
+</div>
+

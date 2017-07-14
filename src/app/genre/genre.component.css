@@ -1,0 +1,17 @@
+.search{
+  border-radius: 17px;
+}
+ul {
+  list-style:none;
+  list-style-type:none;
+  list-style-image:none;
+}
+.music-container{
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  margin: 61px;
+  font-family: cursive;
+  font-size: x-large;
+  line-height: 2;
+}
